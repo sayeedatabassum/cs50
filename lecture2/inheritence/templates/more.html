@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+       
+
+        {% extends "layout.html" %}
+
+        {% block heading %}
+            Second page
+        {% endblock %}
+
+        {% block body %}
+            <p>
+                well you guys know me i guess i am from india.
+            </p>
+
+            <a href="{{ url_for('index') }}">Go back</a>
+        {% endblock %}
+
+    </body>
+</html>
