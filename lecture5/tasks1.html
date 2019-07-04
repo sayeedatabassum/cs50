@@ -2,37 +2,34 @@
 <html>
     <head>
         <script>
-
             document.addEventListener('DOMContentLoaded', () => {
 
                 //by default, submit button is disabled
                 document.querySelector('#submit').disabled = true;
 
-                //Enabled button only if there is text in the input field
+                //Enable button only if there is text in the input field
                 document.querySelector('#task').onkeyup = () => {
                     document.querySelector('#submit').disabled = false;
-
                 };
 
+                document.querySelector('#new-task').onsubmit = () => {
 
-            document.querySelector('#new-task').onsubmit = () => {
-
-            //create new item for list
-            const li = document.createElement('li');
-            li.innerHTML =document.querySelector('#task').value;
+                    //create new item for list
+                    const li = document.createElement('li');
+                    li.innerHTML = document.querySelector('#task').value;
         
 
-                //Add new item to task list
-                document.querySelector('#tasks').append(li);
+                    //Add new item to task list
+                    document.querySelector('#tasks').append(li);
 
-                //Clear input field and disabled button again
-                document.querySelector('#task').value = '';
-                document.querySelector('#submit').disabled = true;
+                    //Clear input field and disabled button again
+                    document.querySelector('#task').value = '';
+                    document.querySelector('#submit').disabled = true;
 
-                //Stop from submitting
-                return false;
+                    //Stop from submitting
+                    return false;
 
-            }; 
+                }; 
             });
         </script>
         <title>Tasks</title>

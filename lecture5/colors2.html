@@ -1,19 +1,19 @@
  <!DOCTYPE html>
 <html>
     <head>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
 
-    //Have each button change the color of the heading
-    document.querySelectorAll(".color-change").forEach(function(button => {
-    button.onclick = () => {
-    document.querySelector('#hello').style.color = button.dataset.color;
-    };
-});
-    });
+                //Have each button change the color of the heading
+                document.querySelectorAll(".color-change").forEach(button => {
+                    button.onclick = () => {
+                        document.querySelector('#hello').style.color = button.dataset.color;
+                    };
+                });
+            });
 
-    </script>
-    <title>My Website</title>
+        </script>
+        <title>My Website</title>
     </head>
     <body>
         <h1 id="hello">Hello!</h1>   

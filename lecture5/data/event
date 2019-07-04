@@ -1,3 +1,9 @@
+ES6 new javascript version
+
+function hello() {
+	alert('Hello, world');
+}
+
 Events
 
 onclick
@@ -6,3 +12,63 @@ onkeydown
 onkeyup
 onload
 onblur
+....
+
+
+Queryselector
+
+document.querySelector('tag')
+document.querySelector('#id')
+document.querySelector('.class').
+
+selecting query
+document.querySelector('h1').innerHTML = "Goodbye!";
+<button onclick="hello()">Click Here!</button>
+
+ function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+
+  if(counter % 10 === 0) {
+                    alert("Counter is at ${counter}!");
+                }
+            }
+<button onclick="count()">Click Here!</button>
+
+
+
+
+ document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('button').onclick = count;
+
+            });
+
+            let counter=0;
+
+            function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+
+                if(counter % 10 === 0) {
+                    alert("Counter is at ${counter}!");
+                }
+            }
+
+
+Variables
+
+const
+let
+var
+
+ArrowFUnctions
+
+() => {
+	alert('Hello, world!');
+}
+
+() => {
+	alert(x);
+}
+
+x => x * 2
